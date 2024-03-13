@@ -24,9 +24,24 @@ The voltage divider circuit consists of two resistors (R1 and R2) connected in s
             │                  └─┘     V2= 3.37V  │
             │ ──────────────────│─────────────────
               <------- I ≈ 0.086mA  
-
 # Voltage Calculation Formula:
-     Vout = Vin × R2 / (R1 + R2))
+
+The voltage calculation in a voltage divider circuit is determined by the following formula:
+
+     Vout = Vin × (R2 / (R1 + R2))
+
+Where:
+- \( V_{out} \) is the output voltage.
+- \( V_{in} \) is the input voltage.
+- \( R1 \) is the resistance of the first resistor.
+- \( R2 \) is the resistance of the second resistor.
+
+This formula is based on Ohm's Law and the voltage divider principle. It calculates the voltage across \( R2 \) based on the input voltage \( V_{in} \) and the ratio of \( R2 \) to the total resistance \( (R1 + R2) \).
+
+You can use this formula to compute the output voltage in your voltage divider circuit. Additionally, online tools like the Voltage Divider Calculator at ohmslawcalculator.com/voltage-divider-calculator can provide convenient ways to calculate voltage values based on resistor values and input voltage.
+
+https://ohmslawcalculator.com/voltage-divider-calculator  
+     
      
 # Current Calculation
      I = Vout / R_total
