@@ -7,7 +7,9 @@ The ESP32 microcontroller measures voltage and current using a voltage divider c
 
 # Voltage Divider Circuit 
 The voltage divider circuit consists of two resistors (R1 and R2) connected in series. The voltage to be measured is applied across R1, and the output voltage is taken from the junction of R1 and R2.  
- 
+
+
+                                       V1 = 8.63V
                                 ┌───────────────────  
     ┌───────────────┐          ┌▼┐                 │  
     │               │          │ │                 │  
@@ -18,5 +20,37 @@ The voltage divider circuit consists of two resistors (R1 and R2) connected in s
     └───────────────┘          ┌▼┐           └────────────┘
            GND                 │ │                _
             │                  │ │ 39 Ω           │
-            │                  └─┘                │
+            │                  └─┘     V2= 3.37V  │
             │ ──────────────────│─────────────────
+              <------- I ≈ 0.086mA  
+   
+    Vin = 12V
+    R1 = 100 Ω
+    R2 = 39 Ω
+    R_total = R1 + R2
+            = 100Ω + 39Ω
+            = 139Ω
+    
+    Vout = Vin X R2  
+       ─────────
+        (R1 + R2)
+        
+    Vout = 12v X 39Ω
+       ─────────
+      (100 Ω + 39Ω)
+    ┌──────────────────────┐ 
+    │ Vout ≈ 3.368 ≈ 3.37V │
+    └──────────────────────┘
+           Vout
+    i = ─────────
+         R_total
+     
+           12
+    i = ─────────
+           139Ω
+    ┌──────────────────────┐ 
+    │     I ≈ 0.086mA      │
+    └──────────────────────┘
+
+
+    
