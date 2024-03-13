@@ -50,6 +50,9 @@ https://ohmslawcalculator.com/voltage-divider-calculator
     - 16x2 LCD Screen
     - Resistors (R1, R2)
     - Momentary Push Button
+
+# Wiring Diagram
+![Alt text](https://github.com/messiderata/ESP32-Voltmeter-Ammeter-with-LCD-Display/blob/main/Wire%20diagram.png)
 # Usage
     1. Upload the provided code to your ESP32 microcontroller.
     2. Connect the components as per the wiring diagram.
