@@ -30,7 +30,13 @@ The voltage divider circuit consists of two resistors (R1 and R2) connected in s
 # Current Calculation
      I = Vout / R_total
 # Components Used
-    ESP32 microcontroller
-    16x2 LCD Screen
-    Resistors (R1, R2)
-    Momentary Push Button
+    - ESP32 microcontroller
+    - 16x2 LCD Screen
+    - Resistors (R1, R2)
+    - Momentary Push Button
+# Usage
+    1. Upload the provided code to your ESP32 microcontroller.
+    2. Connect the components as per the wiring diagram.
+    3. Power on the circuit.
+    4. Press the push button to switch between voltage and current measurements.
+    5. Read the measured values displayed on the LCD screen.
