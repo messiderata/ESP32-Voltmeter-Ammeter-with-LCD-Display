@@ -23,50 +23,14 @@ The voltage divider circuit consists of two resistors (R1 and R2) connected in s
             │                  └─┘     V2= 3.37V  │
             │ ──────────────────│─────────────────
               <------- I ≈ 0.086mA  
-   
-    Vin = 12V
-    R1 = 100 Ω
-    R2 = 39 Ω
-    R_total = R1 + R2
-            = 100Ω + 39Ω
-            = 139Ω
-    
-    Vout = Vin X R2  
-       ─────────
-        (R1 + R2)
-        
-    Vout = 12v X 39Ω
-       ─────────
-      (100 Ω + 39Ω)
-    ┌──────────────────────┐ 
-    │ Vout ≈ 3.368 ≈ 3.37V │
-    └──────────────────────┘
-           Vout
-    i = ─────────
-         R_total
+
+# Voltage Calculation Formula:
+     Vout = Vin × R2 / (R1 + R2))
      
-           12
-    i = ─────────
-           139Ω
-    ┌──────────────────────┐ 
-    │     I ≈ 0.086mA      │
-    └──────────────────────┘
-
-    V1 = (R1)(I)
-    V1 = (100)(0.086)
-    ┌──────────────────────┐ 
-    │    V1 = 8.6V         │
-    └──────────────────────┘
-
-    V2 = (R2)(I)
-    V2 = (39)(0.086)
-    ┌──────────────────────┐ 
-    │    V2 = 3.4          │
-    └──────────────────────┘
-
-    
-    V = 8.6 + 3.4
-    ┌──────────────────────┐ 
-    │    V2 = 12           │
-    └──────────────────────┘
-    
+# Current Calculation
+     I = Vout / R_total
+# Components Used
+    ESP32 microcontroller
+    16x2 LCD Screen
+    Resistors (R1, R2)
+    Momentary Push Button
