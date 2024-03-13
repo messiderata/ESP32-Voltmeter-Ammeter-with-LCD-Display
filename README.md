@@ -3,7 +3,7 @@
 This project utilizes an ESP32 microcontroller to measure both voltage and current using a voltage divider circuit. It includes a simple user interface displayed on a 16x2 LCD screen.
 
 ## Description 
-The ESP32 microcontroller measures voltage and current using a voltage divider circuit. A momentary push button allows switching between voltage and current measurements. The measured values are displayed on a Liquid Crystal Display (LCD).
+The ESP32 microcontroller measures voltage and current using a voltage divider circuit. A momentary push button allows switching between voltage and current measurements. The measured values, within the range of 0 - 12V, are displayed on a Liquid Crystal Display (LCD).
 
 
 # Voltage Divider Circuit 
